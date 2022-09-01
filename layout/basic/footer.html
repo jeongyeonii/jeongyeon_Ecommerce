@@ -1,0 +1,62 @@
+<div id="footer" class="pb-5 footer">
+    <div class="inner">
+        <ul class="utilMenu d-flex justify-content-around pt-3">
+            <li class="home"><a href="/index.html">홈</a></li>
+            <li><a href="/shopinfo/company.html">회사소개</a></li>
+            <li><a href="/member/agreement.html">이용약관</a></li>
+            <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="/shopinfo/guide.html">이용안내</a></li>
+            <div module="Layout_ReferenceCurrencyList" class="list">
+            
+                <button type="button" class="toggle" id="reference_currency_button">
+                    <span class="btn-global">참조화폐</span>
+                    <span class="currencyNow">{$current_reference_currency_code} {$current_reference_currency_symbol}</span>
+                </button>
+                <ul module="Layout_ReferenceCurrencyListitem" class="multicurrencylistitem" id="reference_currency_list">
+                    <li class="">
+                        <a href="#">
+                            <span class="name">{$reference_currency_code}</span>
+                            <span class="unit">{$reference_currency_symbol}</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <span class="name">{$reference_currency_code}</span>
+                            <span class="unit">{$reference_currency_symbol}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+        <div class="d-flex pt-5">
+            <div class="logo">
+                <span module="Layout_LogoBottom">
+            
+                    <a href="/index.html"><img src="/jeongyeon/img/Clinique_logo.svg" alt="mainlogo" style="width: 10em;"></a>
+                </span>
+            </div>
+            <div class="info">
+                <div module="Layout_footer" class="">
+                    <div class="d-flex justify-content-around">
+                        <p class="address pl-5">
+                            <span class="pr-3">(주) | {$company_name} </span> <span class="pr-3"> 만든이 | {$president_name}</span> <span class="pr-3">사업자등록번호 | [{$company_regno}]</span> <span class="pr-3">통신판매업 신고 | {$network_regno}</span> <span class="pr-3">{$biz_no_link}</span> <br />
+                        </p>
+                        <p class="address pl-5">
+                            <span class="pr-3">TEL | {$phone}</span> <span class="pr-3">FAX | {$fax}</span> <span class="pr-3">ADDRESS | {$mall_zipcode} {$mall_addr1} {$mall_addr2}</span><br />
+                            <!-- <span class="{$cpo_email|display} pr-3">개인정보보호책임자 | <a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a></span><br /> -->
+                        </p>
+                        <p class="footer_icon">
+                            <a href="https://www.youtube.com/channel/UCp66A68VytRXEz7jS87ceEQ" target="_blank"><i class="xi-youtube-play"></i></a>
+                            <a href="https://www.instagram.com/cliniquekorea/" target="_blank"><i class="xi-instagram pl-3"></i></a>
+                            <a href="https://pf.kakao.com/_xbSfxdR" target="_blank"><i class="xi-kakaotalk pl-3"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div module="Layout_footer" class="d-flex justify-content-center">
+            <p class="copyright pb-3">Copyright &copy; <strong>{$mall_name}</strong>. All rights reserved.</p>
+        </div>
+    </div>
+</div>

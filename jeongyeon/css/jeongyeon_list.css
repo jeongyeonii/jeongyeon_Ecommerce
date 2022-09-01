@@ -1,0 +1,26 @@
+/* 추천 상품, 홈 > 카테고리명, 상품설명 안보이게 처리 */
+.list_none{display: none;}
+.path{display: none;}
+.description li:nth-child(1), .description li:nth-child(2) {display: none;}
+#quick{display: none;}
+/* 상품 분류명 */
+.title{
+    text-align: center;
+}
+.title > h2 >span{
+    font-size: 2em;
+    font-weight: 100;
+}
+.xans-product-normalmenu .function{
+    border: none;
+}
+#Product_ListMenu .prdCount{
+    color: #333;
+}
+
+#list-jy .grid3 .icon:after{display: none;}
+#list-jy .grid3 .thumbnail .icon{border: none; display: none;}
+
+/******기획전 커스터 마이징******/
+#promotion-jy .grid4 .icon:after{display: none;}
+#promotion-jy .grid4 .icon{display: none;}

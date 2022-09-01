@@ -1,0 +1,87 @@
+<div id="c_header">
+    <div class="inner">
+
+
+    </div>
+
+    <div class="d-flex justify-content-start align-items-center pl-5">
+        <div class="topArea">
+            <h1 module="Layout_LogoTop">
+               
+                <a href="/index.html"><img src="/jeongyeon/img/Clinique_logo.svg" alt="mainlogo"></a>
+            </h1>
+        </div>
+        <div class="menusss pl-5 d-flex justify-content-start">
+            <div id="category" module="Layout_category">
+                <!--@css(/css/module/layout/category.css)-->
+                <!--@js(/js/module/layout/category.js)-->
+                <div class="position">
+                    <ul class="position-category">
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                        <li class="promotion"><a href="http://jeongyeonida.cafe24.com/product/project.html?cate_no=51">{$name_or_img_tag}</a>
+                            <ul module="Layout_project" class="position-absolute promotion_category">
+                                <li><a href="/product/project.html{$param}">{$category_text}</a></li>
+                                <li><a href="/product/project.html{$param}">{$category_text}</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+            </div>
+
+    
+        </div>
+        <div class="topNavi d-flex justify-content-between align-items-center">
+            <!-- <div class="leftTop d-flex" >
+                <div class="cs">C/S CENTER <span module="Layout_footer"> {$phone} </span></div>
+                <div class="community" module="Layout_BoardInfo">
+                    <button>COMMUNITY</button>
+                    <ul class="position-absolute">
+                        <li><a href="{$link_board_list}" class="link">{$board_name}</a> {$board_adult_icon}</li>
+                        <li><a href="{$link_board_list}" class="link">{$board_name}</a> {$board_adult_icon}</li>
+                    </ul>
+                </div> 
+               
+            </div> -->
+            <div class="rightTop util">
+                <div module="Layout_statelogoff">
+                    <!-- <a href="/member/login.html" class="log pr-2"><img src="/jeongyeon/img/login.svg" alt="로그인/회원가입"></a>        -->
+                    <a href="/myshop/index.html" class="pr-2"><img src="/jeongyeon/img/topmenu_1.svg" alt="마이페이지"></a>
+                    <a href="/order/basket.html" class="pr-1"><img src="/jeongyeon/img/topmenu_2.svg" alt="장바구니"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                                        
+                </div>    
+                <div module="Layout_stateLogon">
+                    <!-- <a href="{$action_logout}" class="log pr-2"><img src="/jeongyeon/img/logout.svg" alt="로그아웃"></a> -->
+                    <a href="/myshop/index.html" class="pr-2"><img src="/jeongyeon/img/topmenu_1.svg" alt="마이페이지"></a>
+                    <a href="/order/basket.html" class=""><img src="/jeongyeon/img/topmenu_2.svg" alt="장바구니"> <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                </div>                
+            </div>
+                <div>
+                    <input type="image" src="/jeongyeon/img/search.svg" id="searchBtn">                           
+                    <div class="position-absolute searchDiv">
+                        <div module="Layout_SearchHeader">
+
+
+                        <!--$product_page=/product/detail.html
+                        $category_page=/product/list.html-->
+                
+                        <fieldset>
+                            <legend>검색</legend>
+                            {$form.keyword}<a onclick="{$action_search_submit}" class="search_cursor">SEARCH</a>
+                            <ul class="autoDrop" id="{$search_auto_id}"></ul>
+                            </fieldset>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+</div>
